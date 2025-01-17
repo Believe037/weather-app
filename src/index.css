@@ -60,7 +60,7 @@ code {
   border: 0 !important;
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
-  background: #B6D0E250 !important;
+  background: #ffffff !important;
   
 }
 
@@ -68,7 +68,7 @@ code {
   border: 0 !important;
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
-  background: #B6D0E250 !important;
+  background: #fff !important;
 }
 
 .cust-radius-input::placeholder {

@@ -37,7 +37,10 @@ const App: Component = ({}) => {
           {countryToAlpha3(weather()?.location?.country)}
              </span></span>
           <span class="time-span"><span>
-            {new Date(weather()?.location?.localtime.toString()).toLocaleTimeString("en-US", {hour:"2-digit", minute: "2-digit"})}
+            <Show when={weather()} fallback={<>Loading...</>}>
+              <>{new Date(weather()?.location?.localtime.toString()).toLocaleTimeString("en-US", {hour:"2-digit", minute: "2-digit"})}</>
+            </Show>
+            
             
             </span><span>
             {/* <Fa icon={faEllipsisV}/> */}
