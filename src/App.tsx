@@ -21,8 +21,6 @@ const App: Component = ({}) => {
   })
 
 
-console.log(countryToAlpha3("United States of America"))
-
   let tm = new Date();
   let time_now = tm.toLocaleTimeString("en-US", {hour:"2-digit", minute: "2-digit"});
 
