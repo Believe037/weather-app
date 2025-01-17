@@ -6,7 +6,7 @@ import Fa from 'solid-fa';
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import Card  from './components/Card';
 const [ weather, setWeather ] = createSignal([]);
-const [ city, setCity ] = createSignal('Ikeja');
+const [ city, setCity ] = createSignal('Enugu');
 
 
 
@@ -33,13 +33,11 @@ const App: Component = ({}) => {
       {/* <div class="card-header"></div> */}
       <div class="card-body cust-card-body">
         <div class="city-div d-flex">
-          <span class="cust-city-icon">{city()} <span class="cust-country-icon">/ 
+          <span class="cust-city-icon">{city()} <span class="cust-country-icon">| 
           {countryToAlpha3(weather()?.location?.country)}
              </span></span>
           <span class="time-span"><span>
             {new Date(weather()?.location?.localtime.toString()).toLocaleTimeString("en-US", {hour:"2-digit", minute: "2-digit"})}
-            
-            
             
             </span><span>
             {/* <Fa icon={faEllipsisV}/> */}
@@ -51,9 +49,15 @@ const App: Component = ({}) => {
 
           <div>
             {/* <Fa icon={faCloudRain} class="display-6 mt-5"/> */}
-          <img src={weather()?.current?.condition?.icon} alt="" /></div>
+          <img class="w-1" src={weather()?.current?.condition?.icon} alt="" /></div>
           <div class="temp-div">
-            <h1 class="display-1" style="margin-left: 20px; margin-bottom: 0">{weather()?.current?.temp_c}<span style="font-weight: 200; font-size: 5.7rem; line-height: 0;">&#176;</span></h1>
+            <h1 class="display-1" style="margin-left: 20px; margin-bottom: 0">
+            <Show when={weather()} fallback={<>Loading...</>}>
+            <>{weather()?.current?.temp_c}</>
+            </Show>
+              
+
+              <span style="font-weight: 200; font-size: 5.7rem; line-height: 0;">&#176;</span></h1>
           </div>
           <div class="current-condition">
             <p>{weather()?.current?.condition?.text}</p>
