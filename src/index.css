@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, #8B4AD2, #C072ED)!important;
+  color: #f5f5f5 !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.cust-card {
+  box-shadow: -10px 10px 20px #00000050;
+  color: #fff !important;
+  background: linear-gradient(45deg, rgba(16,138,242,1) 0%, rgba(36,202,241,1) 72%, rgba(0,212,255,1) 100%);
+  border-radius: 10px !important;
+}
+
+/* .cust-card-body {
+  background: rgb(16,138,242);
+} */
+
+.city-div {
+  justify-content: space-between;
+  font-size: .85rem;
+}
+
+.time-span {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.cust-city-icon {
+  font-weight: bold;
+}
+
+.cust-country-icon {
+  font-weight: 400;
+}
+
+.wind-div {
+  font-size: .85rem;
+  color: #f2f2f2;
+}
+
+.color{
+  color: #f2f2f2 ;
+  text-shadow: 1px 1px 5px #00000050;
+}
+
+
+
+.cust-radius-btn {
+  border: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  background: #B6D0E250 !important;
+  
+}
+
+.cust-radius-input {
+  border: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  background: #B6D0E250 !important;
+}
+
+.cust-radius-input::placeholder {
+  font-size: .75rem;
+  font-style: italic;
+}
+
+.cust-btn-check {
+  font-size: .85rem !important;
+  border: 0;
+}
