@@ -6,7 +6,7 @@ import Fa from 'solid-fa';
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import Card  from './components/Card';
 const [ weather, setWeather ] = createSignal([]);
-const [ city, setCity ] = createSignal('Lekki');
+const [ city, setCity ] = createSignal('Ikeja');
 
 
 
